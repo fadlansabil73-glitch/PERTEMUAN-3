@@ -1,0 +1,64 @@
+/* ========================================================
+   1. ELEMENT SELECTOR 
+   Mereset bawaan browser dan mengatur fondasi global
+======================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Warna latar kebiruan yang modern */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p, ul {
+    margin-top: 0;
+}
+
+/* ========================================================
+   2. CLASS SELECTOR 
+   Untuk komponen yang digunakan lebih dari satu kali
+======================================================== */
+.navbar {
+    background-color: #1e3a8a; /* Biru khas almamater */
+    color: white;
+    padding: 20px; /* BOX MODEL: Jarak teks ke tepi navbar */
+    text-align: center;
+    border-bottom: 5px solid #172554;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* BOX MODEL: Jarak antar menu navigasi */
+    font-weight: bold;
+}
+
+.kartu {
+    background-color: white;
+    /* PENERAPAN BOX MODEL LENGKAP */
+    padding: 25px; /* Jarak dari garis batas ke teks di dalamnya */
+    margin-bottom: 25px; /* Jarak dorong ke kartu di bawahnya */
+    border-left: 6px solid #3b82f6; /* Garis aksen biru di sebelah kiri */
+    border-radius: 10px; /* Melengkungkan sudut kotak */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Bayangan halus */
+}
+
+.kartu h2 {
+    color: #1e3a8a;
+    border-bottom: 2px solid #e2e8f0; /* Garis pemisah judul dan isi */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.kartu li {
+    margin-bottom: 8px; /* BOX MODEL: Jarak antar list keahlian */
+}
+
+/* ========================================================
+   3. ID SELECTOR 
+   Untuk mengatur batas tata letak layar utama
+======================================================== */
+#kontainer-utama {
+    max-width: 800px; /* Mencegah kotak terlalu melebar di layar laptop */
+    margin: 30px auto; /* Trik menengahkan elemen di tengah layar */
+    padding: 0 20px; /* BOX MODEL: Mencegah konten menabrak tepi layar HP */
+}
